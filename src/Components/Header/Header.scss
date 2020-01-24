@@ -1,0 +1,11 @@
+
+.dropdown-menu {
+  min-width: auto;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  &:focus, &:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
