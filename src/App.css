@@ -1,0 +1,52 @@
+/* @font-face{
+  font-family: '字体名称随便起'; 
+  src: url('../font/字体名称.eot');
+  src:url('../font/字体名称.woff') format('woff'),
+      url('../font/字体名称.ttf') format('truetype'),
+      url('../font/字体名称.svg') format('svg');
+} */
+
+/* html {
+  font-size:62.5%;
+} */
+
+body {
+  /* background: #282828; */
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 200;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+button, button:focus {
+  outline: 0 none;
+}
+
+.navbar {
+  /* background: #202020; */
+  font-size: 14px;
+}
+
+.navbar-logo {
+  height: 30px;
+}
+
+.nav-item {
+  margin-left: 24px;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  /* font-size: 24px; */
+}

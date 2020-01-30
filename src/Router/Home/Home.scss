@@ -1,0 +1,154 @@
+.eye {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content-box {
+  position: relative;
+  min-width: 460px;
+  .circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #66BE00;
+  }
+  .box-bottom {
+    position: absolute;
+    bottom: 56px;
+    left: 126px;
+  }
+
+  .box-top {
+    top: 24px;
+    left: 48px;
+    position: absolute;
+    vertical-align: middle;
+  }
+
+  .serial {
+    font-family: Oswald;
+    font-size: 68px;
+    margin-right: 20px;
+  }
+  .box-title {
+    font-size: 38px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000;
+    // display: inline-block;
+    // margin-bottom: 5px;
+  }
+  .more {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 48px;
+  }
+  .arrow {
+    // font-size: 20px;
+    color: #000;
+  }
+}
+
+.conservation {
+  background-color: #F7F7F7;
+  padding-top: 100px;
+  img {
+    width: 100%;
+  }
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+}
+
+.video {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  .desc {
+    padding: 15px 0;
+  }
+  .video-react {
+    .video-react-big-play-button {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      border: 0;
+      background-color: #fff;
+    }
+    .video-react-big-play-button.video-react-big-play-button-center {
+      left: calc(50% - 20px);
+      margin-left: 0;
+    }
+    .video-react-big-play-button:before {
+      color: #000;
+    }
+  }
+}
+
+
+
+.about-us {
+  padding-bottom: 180px;
+  .process {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #66BE00;
+    .point {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: -5px;
+      border-radius: 50%;
+      background-color: #66BE00;
+    }
+    .desc {
+      position: absolute;
+      top: -25px;
+      font-size: 12px;
+    }
+    .point_1, .desc_1 {
+      left: 15%;
+    }
+
+    .point_2, .desc_2 {
+      left: 35%;
+    }
+
+    .point_3 {
+      right: 5%;
+    }
+  }
+
+  .about-us-img {
+    width: 100%;
+  }
+
+  .about-us-right {
+    position: relative;
+  }
+  
+  .hr {
+    margin: 10px 0 20px 0;
+    height: 2px;
+    width: 30px;
+    background-color: #65BE00;
+  }
+
+  .about-us-right-box {
+    position: absolute;
+    top: -30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    .about-us-right-box {
+      position: static;
+    }
+  }
+}
+
+
+
+
