@@ -12,8 +12,8 @@ function Home() {
       <div className="eye">
         <BigTitle className="text-center" margin="0 0 150px 0" cn="眼部产品能量套餐" en="Eye nourishing energy package" />
         <div className="row">
-          <div className="col-12 col-lg-6 d-flex justify-content-center">
-            <div className="content-box">
+          <div className="col-6 text-center content-box">
+            {/* <div className="content-box">
               <div className="circle"></div>
               <div className="box-top">
                 <span className="serial">01</span>
@@ -23,10 +23,20 @@ function Home() {
                 <a href="" className="more">了解更多</a>
                 <a href="" className="arrow">→</a>
               </div>
-            </div>
+            </div> */}
+
+              <img src="assets/image/01@2x.png" alt=""/>
+              <a href="" className="arrow">
+                {/* <img src="assets/image/arrow_light@2x.png" alt=""/> */}
+              </a>
+            
           </div>
-          <div className="col-12 col-lg-6 d-flex justify-content-center">
-            <div className="content-box">
+          <div className="col-6 text-center content-box">
+            <img src="assets/image/01@2x.png" alt=""/>
+            <a href="" className="arrow">
+              {/* <img src="assets/image/arrow_light@2x.png" alt=""/> */}
+            </a>
+            {/* <div className="content-box">
               <div className="circle"></div>
               <div className="box-top">
                 <span className="serial">02</span>
@@ -36,7 +46,7 @@ function Home() {
                 <a href="" className="more">了解更多</a>
                 <a href="" className="arrow">→</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

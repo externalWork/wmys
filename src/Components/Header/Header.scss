@@ -9,3 +9,72 @@
     background: rgba(0, 0, 0, 0.8);
   }
 }
+
+.navbar {
+  /* background: #202020; */
+  font-size: 14px;
+  padding: 0.5rem 0;
+}
+
+.navbar-logo {
+  width: 280px;
+  height: 72px;
+}
+
+.nav-item {
+  padding-left: 24px;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  font-size: 24px;
+}
+
+.navbar-close {
+  border: 0;
+}
+
+.cross {
+  width: 48px;
+  height: 48px;
+}
+
+.navbar-toggler-icon {
+  width: 42px;
+  height: 36px;
+}
+
+@media (max-width: 767px) {
+  .navbar-logo {
+    width: 217px;
+    height: 56px;
+  }
+
+  .navbar-brand {
+    padding: 20px 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+  
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar-nav {
+    background-color: #66BE00;
+    height: calc(100vh - 96px);
+  }
+  .navbar-brand {
+    margin-left: 24px;
+  }
+  .navbar-toggler {
+    margin-right: 24px;
+  }
+  .nav-item {
+    border-bottom: 1px solid #000;
+  }
+}

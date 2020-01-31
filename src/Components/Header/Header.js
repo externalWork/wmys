@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import './Header.scss'
 
 export default function Header(props) {
+  const [ show, setShow ] = useState(false)
+
+  // useEffect(() => {
+    
+  // });
+ 
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container">
-        <Link className="navbar-brand abs" to="/">
+        <Link className="navbar-brand" to="/">
           <img src="assets/image/logo@2x.png" className="navbar-logo" alt="" />
         </Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-          <span className="navbar-toggler-icon"></span>
+        <button onClick={() => setShow(!show)} className={'navbar-toggler' + (show ? ' navbar-close' : '')} type="button"  data-toggle="collapse" data-target="#collapsingNavbar">
+          {
+            show ? <img className="cross" src="assets/image/cross@2x.png" alt="" /> : <span className="navbar-toggler-icon"></span>
+          }
         </button>
         <div className="navbar-collapse collapse" id="collapsingNavbar">
           <ul className="navbar-nav ml-auto">

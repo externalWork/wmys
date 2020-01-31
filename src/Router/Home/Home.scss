@@ -1,11 +1,16 @@
 .eye {
   padding-top: 80px;
   padding-bottom: 80px;
+  img {
+    width: 80%;
+  }
 }
 
 .content-box {
   position: relative;
-  min-width: 460px;
+  // min-width: 460px;
+
+  
   .circle {
     width: 220px;
     height: 220px;
@@ -43,8 +48,14 @@
     margin-right: 48px;
   }
   .arrow {
-    // font-size: 20px;
+    width: 5%;
+    height: 8%;
     color: #000;
+    position: absolute;
+    left: 60%;
+    bottom: 28%;
+    background: url(/assets/image/arrow_light@2x.png) no-repeat center;
+    background-size: 100%;
   }
 }
 
