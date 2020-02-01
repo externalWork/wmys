@@ -5,9 +5,13 @@ import './Header.scss'
 export default function Header(props) {
   const [ show, setShow ] = useState(false)
 
-  // useEffect(() => {
-    
-  // });
+  useEffect(() => {
+    if (show) {
+      document.querySelector('body').classList.add('hidden')
+    } else {
+      document.querySelector('body').classList.remove('hidden')
+    }
+  });
  
   return (
     <nav className="navbar navbar-expand-md navbar-light">
@@ -23,19 +27,19 @@ export default function Header(props) {
         <div className="navbar-collapse collapse" id="collapsingNavbar">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/home">首页</Link>
+              <Link className="nav-link small-font-size" to="/home">首页</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/product">产品中心</Link>
+              <Link className="nav-link small-font-size" to="/product">产品中心</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/welfare">公益活动</Link>
+              <Link className="nav-link small-font-size" to="/welfare">公益活动</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/brand">品牌加盟</Link>
+              <Link className="nav-link small-font-size" to="/brand">品牌加盟</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">关于我们</Link>
+              <Link className="nav-link small-font-size" to="/about">关于我们</Link>
             </li>
           </ul>
         </div>
