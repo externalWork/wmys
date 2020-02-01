@@ -54,7 +54,7 @@
     position: absolute;
     left: 60%;
     bottom: 28%;
-    background: url(/assets/image/arrow_light@2x.png) no-repeat center;
+    background: url(/assets/image/home/arrow_light@2x.png) no-repeat center;
     background-size: 100%;
 
   }
@@ -65,7 +65,7 @@
   }
 
   .arrow:hover {
-    background: url(/assets/image/arrow_dark@2x.png) no-repeat center;
+    background: url(/assets/image/home/arrow_dark@2x.png) no-repeat center;
     background-size: 100%;
   }
 }
@@ -99,7 +99,7 @@
       height: 80px;
       border-radius: 50%;
       border: 0;
-      background: url(/assets/image/play@2x.png) no-repeat center;
+      background: url(/assets/image/home/play@2x.png) no-repeat center;
       background-size: 80px;
     }
     .video-react-big-play-button.video-react-big-play-button-center {
@@ -194,6 +194,10 @@
         width: 200px;
         height: 200px;
         background-size: 200px;
+      }
+      .video-react-big-play-button.video-react-big-play-button-center {
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
       }
     }
   }
