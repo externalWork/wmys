@@ -62,15 +62,25 @@
 
   .groups {
     .content {
+      position: relative;
       background-color: #F7F7F7;
-      padding: 93px 62px;
+      padding: 93px 60px;
       .groups_left {
-        width: 900px;
-        height: 876px;
+        width: calc(50% - 110px);
       }
 
       .groups_middle {
         width: 100px;
+      }
+      .groups_right {
+        width: calc(50% - 110px);
+      }
+      .tree {
+        position: absolute;
+        width: 380px;
+        height: 480px;
+        bottom: 0;
+        right: 0;
       }
     }
   }
@@ -146,6 +156,9 @@
       .groups_middle {
         width: 150px;
       }
+      .padding-10 {
+        padding-right: 20%;
+      }
      }
      .large-font-size {
        font-size: 65px;
@@ -153,6 +166,37 @@
      .body-font-size {
        font-size: 50px;
      }
+     
    }
+  }
+}
+
+@media (min-width: 400px) and (max-width: 440px) {
+  .mb-60 {
+    margin-bottom: 65px;
+  }
+  
+  .mb-30 {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 399px) {
+  .mb-60 {
+    margin-bottom: 60px;
+  }
+  
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 359px) {
+  .mb-60 {
+    margin-bottom: 20px;
+  }
+  
+  .mb-30 {
+    margin-bottom: 10px;
   }
 }

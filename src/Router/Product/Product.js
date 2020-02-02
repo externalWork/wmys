@@ -142,7 +142,7 @@ function Product() {
         <div className="content d-flex align-items-center justify-content-between">
           <img className="groups_left" src="assets/image/product/product@2x.png" alt=""/>
           <img className="groups_middle" src="assets/image/product/rectangle@2x.png" alt=""/>
-          <div>
+          <div className="groups_right">
             <div className="large-font-size darker-color mb-30">白领族</div>
             <div className="body-font-size light-color mb-60">眼干、眼涩、眼疲劳。</div>
             <div className="large-font-size darker-color mb-30">学生族</div>
@@ -152,8 +152,9 @@ function Product() {
             <div className="large-font-size darker-color mb-30">中老年人</div>
             <div className="body-font-size light-color mb-60">迎风流泪。</div>
             <div className="large-font-size darker-color mb-30">手机族</div>
-            <div className="body-font-size light-color">手机族</div>
+            <div className="body-font-size light-color padding-10">长时间看屏幕导致的眼镜不适。</div>
           </div>
+          <img className="tree" src="assets/image/product/tree@2x.png" alt=""/>
         </div>
       </div>
     }

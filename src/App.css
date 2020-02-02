@@ -29,10 +29,6 @@ ul, li {
   list-style: none;
 }
 
-.router {
-  min-height: calc(100vh - 900px);
-}
-
 button, button:focus {
   outline: 0 none;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route,  Redirect } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import './App.css';
@@ -19,30 +19,31 @@ export default function App() {
   return (
     <Router className="App">
       <Header />
-      <div className="router">
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
+      <Switch>
+        <Route path='/' exact render={()=> (
+          <Redirect to='/home'/> 
+        )} />
 
-          <Route path="/product">
-            <Product />
-          </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
 
-          <Route path="/welfare">
-            <Welfare />
-          </Route>
+        <Route path="/product">
+          <Product />
+        </Route>
 
-          <Route path="/brand">
-            <Brand />
-          </Route>
+        <Route path="/welfare">
+          <Welfare />
+        </Route>
 
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
-      </div>
-      
+        <Route path="/brand">
+          <Brand />
+        </Route>
+
+        <Route path="/about">
+          <About />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   );
