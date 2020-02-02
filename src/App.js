@@ -19,27 +19,30 @@ export default function App() {
   return (
     <Router className="App">
       <Header />
-      <Switch>
-        <Route path="/home">
-          <Home />
-        </Route>
+      <div className="router">
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
 
-        <Route path="/product">
-          <Product />
-        </Route>
+          <Route path="/product">
+            <Product />
+          </Route>
 
-        <Route path="/welfare">
-          <Welfare />
-        </Route>
+          <Route path="/welfare">
+            <Welfare />
+          </Route>
 
-        <Route path="/brand">
-          <Brand />
-        </Route>
+          <Route path="/brand">
+            <Brand />
+          </Route>
 
-        <Route path="/about">
-          <About />
-        </Route>
-      </Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
+      </div>
+      
       <Footer />
     </Router>
   );

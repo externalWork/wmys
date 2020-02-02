@@ -29,6 +29,10 @@ ul, li {
   list-style: none;
 }
 
+.router {
+  min-height: calc(100vh - 900px);
+}
+
 button, button:focus {
   outline: 0 none;
 }
@@ -36,6 +40,10 @@ button, button:focus {
 .relative {
   position: relative;
 }
+
+
+
+/* text-align:justify; */
 
 .min-font-size {
   font-size: 20px;
@@ -57,6 +65,10 @@ button, button:focus {
   font-size: 40px;
 }
 
+.larger-font-size {
+  font-size: 44px;
+}
+
 .bigger-font-size {
   font-size: 48px;
 }
@@ -64,6 +76,27 @@ button, button:focus {
 .max-font-size {
   font-size: 80px;
 }
+
+.darker-color {
+  color: #000;
+}
+
+.dark-color {
+  color: #333;
+}
+
+.light-color {
+  color: #666;
+}
+
+.lighter-color {
+  color: #bbb;
+}
+
+.lightest-color {
+  color: #ddd;
+}
+
 
 
 
@@ -86,6 +119,10 @@ button, button:focus {
   
   .large-font-size {
     font-size: 100px;
+  }
+
+  .larger-font-size {
+    font-size: 110px;
   }
   
   .bigger-font-size {

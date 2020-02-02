@@ -1,0 +1,35 @@
+.title {
+  margin: 100px 0;
+}
+
+.content {
+  position: relative;
+  img {
+    width: 660px;
+  }
+  .desc {
+    position: absolute;
+  }
+
+  .desc_1 {
+    top: 90px;
+    left: 250px;
+  }
+
+  .desc_2 {
+    top: 90px;
+    right: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    .desc_1 {
+      top: 80px;
+      left: 60px;
+    }
+  }
+  .large-font-size {
+    font-size: 40px;
+  }
+}

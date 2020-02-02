@@ -6,8 +6,9 @@ import { Player, BigPlayButton } from 'video-react';
 import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
+  const sliderImages = ['home/banner@2x.png', 'home/banner@2x.png', 'home/banner@2x.png'];
   return <div className="home">
-    <Slider />
+    <Slider sliderImages={sliderImages}/>
     <div className="container">
       <div className="eye">
         <BigTitle className="text-center mb-157" cn="眼部产品能量套餐" en="Eye nourishing energy package" />

@@ -4,4 +4,15 @@
 
 .bigTitle_en {
   font-size: 40px;
+  color: #bbb;
+}
+
+@media (max-width: 767px) {
+  .bigTitle_cn {
+    font-size: 110px;
+  }
+  
+  .bigTitle_en {
+    font-size: 45px;
+  }
 }
