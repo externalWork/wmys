@@ -11,5 +11,5 @@ function MoreButton(props) {
 export default MoreButton;
 
 MoreButton.defaultProps = {
-  href: ''
+  to: ''
 }

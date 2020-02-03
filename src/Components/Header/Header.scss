@@ -10,18 +10,16 @@
 //   }
 // }
 
-.active {
-  color: #66BE00;
-  .line {
-    height: 4px;
-    background-color: #66BE00;
-  }
-}
-
 .navbar {
-  /* background: #202020; */
   font-size: 14px;
   padding: 28px 0;
+  .active {
+    color: #66BE00 !important;
+    .line {
+      height: 4px;
+      background-color: #66BE00;
+    }
+  }
 }
 
 .navbar-logo {
@@ -33,9 +31,8 @@
   padding-left: 24px;
 }
 
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   color: #000;
-  // font-size: 24px;
 }
 
 .navbar-close {
