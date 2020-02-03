@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import './Header.scss'
 
 export default function Header(props) {
@@ -26,19 +26,19 @@ export default function Header(props) {
         <div className="navbar-collapse collapse" id="collapsingNavbar">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link small-font-size" to="/home" onClick={() => navigate()}>首页</Link>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/home" onClick={() => navigate()}>首页<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link small-font-size" to="/product" onClick={() => navigate()}>产品中心</Link>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/product" onClick={() => navigate()}>产品中心<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link small-font-size" to="/welfare" onClick={() => navigate()}>公益活动</Link>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/welfare" onClick={() => navigate()}>公益活动<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link small-font-size" to="/brand" onClick={() => navigate()}>品牌加盟</Link>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/brand" onClick={() => navigate()}>品牌加盟<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link small-font-size" to="/about" onClick={() => navigate()}>关于我们</Link>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/about" onClick={() => navigate()}>关于我们<div className="line" /></NavLink>
             </li>
           </ul>
         </div>

@@ -1,12 +1,20 @@
 
-.dropdown-menu {
-  min-width: auto;
-}
+// .dropdown-menu {
+//   min-width: auto;
+// }
 
-.dropdown-item {
-  color: #fff !important;
-  &:focus, &:hover {
-    background: rgba(0, 0, 0, 0.8);
+// .dropdown-item {
+//   color: #fff !important;
+//   &:focus, &:hover {
+//     background: rgba(0, 0, 0, 0.8);
+//   }
+// }
+
+.active {
+  color: #66BE00;
+  .line {
+    height: 4px;
+    background-color: #66BE00;
   }
 }
 
@@ -40,7 +48,7 @@
 }
 
 .navbar-brand {
-  margin-left: 24px;
+  margin-left: 0.75rem;
 }
 
 .navbar-toggler-icon {
@@ -49,7 +57,7 @@
 }
 
 .navbar-toggler {
-  margin-right: 24px;
+  // margin-right: 24px;
 }
 
 .hidden {
@@ -68,6 +76,12 @@
 
   .navbar-toggler {
     border: none;
+  }
+
+  .active {
+    .line {
+      height: 0;
+    }
   }
   
 }

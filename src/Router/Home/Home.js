@@ -3,6 +3,8 @@ import { BigTitle } from '../../Components/Title';
 import { Slider } from '../../Components/Slider'
 import { MoreButton } from '../../Components/Button';
 import { Player, BigPlayButton } from 'video-react';
+import { Link } from "react-router-dom"
+
 import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
@@ -27,16 +29,16 @@ function Home() {
             </div> */}
 
               <img src="assets/image/home/01@2x.png" alt=""/>
-              <a href="" className="arrow">
+              <Link to="/brand" className="arrow">
                 {/* <img src="assets/image/home/arrow_light@2x.png" alt=""/> */}
-              </a>
+              </Link>
             
           </div>
           <div className="col-6 text-center content-box">
             <img src="assets/image/home/02@2x.png" alt=""/>
-            <a href="" className="arrow arrow_2">
+            <Link to="/brand" className="arrow arrow_2">
               {/* <img src="assets/image/home/arrow_light@2x.png" alt=""/> */}
-            </a>
+            </Link>
             {/* <div className="content-box">
               <div className="circle"></div>
               <div className="box-top">
@@ -60,7 +62,7 @@ function Home() {
           </div>
           <div className="col-6">
             <BigTitle className="mb-60" cn="我们的品牌形象店" en="Introduction to our brand image store" />
-            <MoreButton href="" />
+            <MoreButton to="/brand" />
             <div className="flower text-right">
               <img src="assets/image/home/flower@2x.png" alt=""/>
             </div>
@@ -83,7 +85,7 @@ function Home() {
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center desc">招商会花絮</div>
+          <div className="text-center darker-color desc">招商会花絮</div>
         </div>
 
         <div className="col-12 col-md-6">
