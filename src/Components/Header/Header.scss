@@ -25,6 +25,7 @@
 .navbar-logo {
   width: 280px;
   height: 72px;
+  content: normal !important;
 }
 
 .nav-item {
@@ -71,11 +72,16 @@
     border: none;
   }
 
-  .active {
-    .line {
-      height: 0;
+  .navbar {
+    .active {
+      color: #000 !important;
+      .line {
+        height: 0;
+        display: none;
+      }
     }
   }
+
   
 }
 

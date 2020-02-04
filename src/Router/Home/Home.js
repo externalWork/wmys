@@ -8,7 +8,11 @@ import { Link } from "react-router-dom"
 import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
-  const sliderImages = ['home/banner@2x.png', 'home/banner@2x.png', 'home/banner@2x.png'];
+  const sliderImages = [
+    {image: 'home/banner@2x.png', to: '/brand'},
+    {image: 'home/banner@2x.png', to: '/brand'},
+    {image: 'home/banner@2x.png', to: '/brand'}
+  ];
   return <div className="home">
     <Slider sliderImages={sliderImages}/>
     <div className="container">
@@ -150,7 +154,7 @@ function Home() {
               <hr className="hr" />
             </div>
             <p className="medium-font-size dark-color">杭州创胜生物科技有限公司，成立于2014年，总部设在美丽的杭州。雾美优视将改善青少年儿童视力健康为己任，以保护提升青少年视力为爆点，全家人的视力美护为核心。</p>
-            <MoreButton href="" />
+            <MoreButton to="/brand" />
           </div>
         </div>
       </div>

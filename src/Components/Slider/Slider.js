@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom"
+
 import './Slider.scss'
 
 export default function Slider (props) {
@@ -13,9 +15,9 @@ export default function Slider (props) {
     </ol>
     <div className="carousel-inner">
       {
-        props.sliderImages.map((image, index) => {
+        props.sliderImages.map((item, index) => {
           return <div className={'carousel-item' + (index ? '' : ' active')} key={index}>
-          <img className="d-block w-100" src={'assets/image/' + image} alt="" />
+          <Link to={item.to}><img className="d-block w-100" src={'assets/image/' + item.image} alt="" /></Link>
         </div>
         })
       }

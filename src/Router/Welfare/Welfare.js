@@ -4,8 +4,11 @@ import { BigTitle } from '../../Components/Title';
 import './Welfare.scss'
 
 function Welfare() {
-  const sliderImages = ['welfare/banner@2x.png', 'welfare/banner@2x.png', 'welfare/banner@2x.png'];
-
+  const sliderImages = [
+    {image: 'welfare/banner@2x.png', to: '/brand'},
+    {image: 'welfare/banner@2x.png', to: '/brand'},
+    {image: 'welfare/banner@2x.png', to: '/brand'}
+  ];
   
   return <div className="welfare">
     <Slider sliderImages={sliderImages} />

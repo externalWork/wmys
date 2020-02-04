@@ -5,7 +5,11 @@ import './Product.scss'
 
 function Product() {
   const [ checkedIndex, setCheckedIndex] = useState(0)
-  const sliderImages = ['product/banner@2x.png', 'product/banner@2x.png', 'product/banner@2x.png'];
+  const sliderImages = [
+    {image: 'product/banner@2x.png', to: '/brand'},
+    {image: 'product/banner@2x.png', to: '/brand'},
+    {image: 'product/banner@2x.png', to: '/brand'}
+  ];
 
   function tabContent() {
     return checkedIndex ?

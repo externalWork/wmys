@@ -14,20 +14,11 @@ const { Point, Size } = Base;
 const { Content } = Label;
 const { Icon } = Marker;
 function About() {
-  const sliderImages = ['about/banner@2x.png', 'about/banner@2x.png', 'about/banner@2x.png'];
-  // console.log(BMap)
-  // 百度地图API功能
-	// var map = new BMap.Map("map");    // 创建Map实例
-	// map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
-	// //添加地图类型控件
-	// map.addControl(new BMap.MapTypeControl({
-	// 	mapTypes:[
-  //           BMAP_NORMAL_MAP,
-  //           BMAP_HYBRID_MAP
-  //       ]}));	  
-	// map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
-	// map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-  
+  const sliderImages = [
+    {image: 'about/banner@2x.png', to: '/brand'},
+    {image: 'about/banner@2x.png', to: '/brand'},
+    {image: 'about/banner@2x.png', to: '/brand'}
+  ];
   return <div className="about">
     <Slider sliderImages={sliderImages} />
     <div className="container">
@@ -57,8 +48,8 @@ function About() {
         <BigTitle className="title text-center" cn="联系我们" en="Contact us" />
         <div className="map" id="map">
           <Map
-            ak="32hqzqoLHxFz1BUCXLunpVcda2vytvXG"
-            scrollWheelZoom
+            ak="zMRCkmDZSZczYgov8O1iqQI2GXhhxbBH"
+            // scrollWheelZoom
             zoom={19}
           >
             <Point name="center" lng="120.259204" lat="30.242381" />

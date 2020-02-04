@@ -3,7 +3,11 @@ import { Slider } from '../../Components/Slider'
 import { BigTitle } from '../../Components/Title';
 import './Brand.scss'
 function Brand() {
-  const sliderImages = ['brand/banner@2x.png', 'brand/banner@2x.png', 'brand/banner@2x.png'];
+  const sliderImages = [
+    {image: 'brand/banner@2x.png', to: '/brand'},
+    {image: 'brand/banner@2x.png', to: '/brand'},
+    {image: 'brand/banner@2x.png', to: '/brand'}
+  ];
   return <div className="brand">
     <Slider sliderImages={sliderImages} />
     <BigTitle className="text-center title" cn="品牌连锁形象店 全国招商" en="Nationwide investment promotion" />
