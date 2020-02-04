@@ -1,7 +1,6 @@
 import React from 'react'
 import { Slider } from '../../Components/Slider'
 import { BigTitle } from '../../Components/Title';
-// import {Map} from 'react-bmap'
 import {
   Map,
   Base,
@@ -12,7 +11,7 @@ import {
 import './About.scss'
 const { Point, Size } = Base;
 const { Content } = Label;
-const { Icon } = Marker;
+// const { Icon } = Marker;
 function About() {
   const sliderImages = [
     {image: 'about/banner@2x.png', to: '/brand'},
