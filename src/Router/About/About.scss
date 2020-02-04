@@ -1,17 +1,163 @@
-.company {
-  padding-bottom: 100px;
+.about {
+  // padding-bottom: 445px;
   .title {
     margin: 80px 0;
   }
-  .desc {
-    color: #444;
-    text-indent: 2em;
+  .company {
+    padding-bottom: 100px;
+    .desc {
+      color: #444;
+      text-indent: 2em;
+    }
+  }
+  
+  .qualification {
+    padding-bottom: 120px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    .map {
+      height: 700px;
+      .BMapLabel {
+        border: none !important;
+        border-radius: 10px;
+        padding: 0 !important;
+        box-shadow:0px 2px 12px 0px rgba(193,193,193,0.5);
+      }
+      .position {
+        
+        .img {
+          width: 80px;
+          height: 80px;
+          border-radius: 10px 0 0 10px;
+          background: url(/assets/image/home/position_img@2x.png) no-repeat left center;
+          background-size: 151.5px 80px ;
+        }
+        .name {
+          margin: 0 60px;
+          font-size: 26px;
+        }
+      }
+      .BMap_noprint {
+        // width: 60px !important;
+        // height: 60px !important;
+        // img {
+        //   width: 100%;
+        // }
+      }
+    }
+    
+  }
+  .contact-card {
+    position: relative;
+    width: 100%;
+    padding: 104px 79px;
+    background-color: #F7F7F7;
+    top: -150px;
+    .address-name {
+      font-size: 60px;
+      width: 360px;
+      margin-right: 134px;
+    }
+    .hr {
+      margin: 10px 0 0 0;
+      height: 2px;
+      width: 80px;
+      margin-top: 80px;
+      background-color: #65BE00;
+    }
+    .contact_info {
+      > div {
+        padding-left: 48px;
+      }
+      img {
+        margin-right: 26px;
+      }
+    }
+    .user {
+      background: url(/assets/image/about/user@2x.png) no-repeat left center;
+      background-size: 32px 28px;
+    }
+    .phone {
+      margin-left: 4px;
+      margin: 16px 0;
+      background: url(/assets/image/about/phone@2x.png) no-repeat left center;
+      background-size: 28px 32px;
+    }
+    .address {
+      margin-left: 9px;
+      background: url(/assets/image/about/address@2x.png) no-repeat left center;
+      background-size: 23px 32px;
+    }
   }
 }
 
-.qualification {
-  padding-bottom: 200px;
-  img {
-    width: 100%;
+@media (max-width: 767px) {
+  .about {
+    .contact {
+      .map {
+        height: 1750px;
+        .BMapLabel {
+          border: none !important;
+          border-radius: 25px;
+          padding: 0 !important;
+          left: 100px !important;
+          top: -250px !important;
+          box-shadow:0px 2px 12px 0px rgba(193,193,193,0.5);
+        }
+        .position {
+          
+          .img {
+            width: 200px;
+            height: 200px;
+            border-radius: 25px 0 0 25px;
+            background: url(/assets/image/home/position_img@2x.png) no-repeat left center;
+            background-size: 378.75px 200px ;
+          }
+          .name {
+            margin: 0 120px;
+            font-size: 65px;
+          }
+        }
+      }
+    }
+    .contact-card {
+      padding: 260px 200px;
+      top: 0px;
+      .address-name {
+        font-size: 100px;
+        width: 600px;
+      }
+      .hr {
+        height: 5px;
+        width: 200px;
+        margin-top: 80px;
+      }
+      .contact_info {
+        > div {
+          padding-left: 120px;
+        }
+        img {
+          margin-right: 65px;
+        }
+      }
+      .user {
+        // background: url(/assets/image/about/user@2x.png) no-repeat left center;
+        background-size: 80px 70px;
+      }
+      .phone {
+        margin: 16px 0 16px 10px;
+        background: url(/assets/image/about/phone@2x.png) no-repeat left center;
+        background-size: 70px 80px;
+      }
+      .address {
+        margin-left: 22.5px;
+        background: url(/assets/image/about/address@2x.png) no-repeat left center;
+        background-size: 57.5px 80px;
+      }
+    }
   }
 }

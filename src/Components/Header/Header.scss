@@ -53,10 +53,6 @@
   height: 94.208px;
 }
 
-.navbar-toggler {
-  // margin-right: 24px;
-}
-
 .hidden {
   overflow: hidden;
 }
@@ -84,19 +80,11 @@
 }
 
 @media (max-width: 575px) {
-  // .navbar {
-  //   padding: 0;
-  // }
   .navbar-nav {
     background-color: #66BE00;
     height: calc(100vh - 96px);
   }
-  // .navbar-brand {
-  //   margin-left: 24px;
-  // }
-  // .navbar-toggler {
-  //   margin-right: 24px;
-  // }
+
   .nav-item {
     border-bottom: 1px solid #000;
   }

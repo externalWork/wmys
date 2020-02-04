@@ -1,10 +1,33 @@
 import React from 'react'
 import { Slider } from '../../Components/Slider'
 import { BigTitle } from '../../Components/Title';
+// import {Map} from 'react-bmap'
+import {
+  Map,
+  Base,
+  Marker,
+  Label
+} from 'rc-bmap';
+
 import './About.scss'
+const { Point, Size } = Base;
+const { Content } = Label;
+const { Icon } = Marker;
 function About() {
   const sliderImages = ['about/banner@2x.png', 'about/banner@2x.png', 'about/banner@2x.png'];
-
+  // console.log(BMap)
+  // 百度地图API功能
+	// var map = new BMap.Map("map");    // 创建Map实例
+	// map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+	// //添加地图类型控件
+	// map.addControl(new BMap.MapTypeControl({
+	// 	mapTypes:[
+  //           BMAP_NORMAL_MAP,
+  //           BMAP_HYBRID_MAP
+  //       ]}));	  
+	// map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	// map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+  
   return <div className="about">
     <Slider sliderImages={sliderImages} />
     <div className="container">
@@ -28,10 +51,53 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="contact">
+      
+    </div>
+    <div className="contact">
         <BigTitle className="title text-center" cn="联系我们" en="Contact us" />
-        <div className="map">
+        <div className="map" id="map">
+          <Map
+            ak="32hqzqoLHxFz1BUCXLunpVcda2vytvXG"
+            scrollWheelZoom
+            zoom={19}
+          >
+            <Point name="center" lng="120.259204" lat="30.242381" />
+            <Marker>
+              <Point lng="120.259204" lat="30.242381" />
+              {/* <Icon
+                imageUrl="/assets/image/about/point@2x.png"
+              >
+                <Size width="30" height="30" />
+              </Icon> */}
+            <Label>
+              <Size name="offset" width="50" height="-25" />
+              <Content>
+                <div className="position d-flex align-items-center">
+                  <span className="img"></span>
+                  <span className="name darker-color">博地中心C座</span>
+                </div>
+              </Content>
+            </Label>
+            </Marker>
+          </Map>
+        </div>
+      </div>
+    <div className="container contact-card d-flex align-items-center">
+      <div className="address-name">
+        <span className="name">杭州创胜生物科技有限公司</span>
+        <hr className="hr" />
+      </div>
+      <div className="contact_info medium-font-size light-color">
+        <div className="user d-flex align-items-center">
+          李胜华
+        </div>
 
+        <div className="phone d-flex align-items-center">
+          13738037181
+        </div>
+
+        <div className="address d-flex align-items-center">
+          浙江省杭州市萧山区博地中心C座2304A
         </div>
       </div>
     </div>
