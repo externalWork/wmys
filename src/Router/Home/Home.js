@@ -119,7 +119,7 @@ function Home() {
           <div className="text-center small-font-size desc">视力防控公益活动走进校园</div>
         </div>
 
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mobile-hide">
           <Player
             playsInline
             aspectRatio="16:9"
