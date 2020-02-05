@@ -9,9 +9,10 @@ import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
   const sliderImages = [
-    {image: 'home/banner@2x.png', to: '/brand'},
-    {image: 'home/banner@2x.png', to: '/brand'},
-    {image: 'home/banner@2x.png', to: '/brand'}
+    {image: 'home/banner.png', to: '/product/1'},
+    {image: 'home/banner.png', to: '/brand'},
+    {image: 'home/banner.png', to: '/brand'},
+    {image: 'home/banner.png', to: '/brand'}
   ];
   return <div className="home">
     <Slider sliderImages={sliderImages}/>
@@ -32,16 +33,16 @@ function Home() {
               </div>
             </div> */}
 
-              <img src="assets/image/home/01@2x.png" alt=""/>
-              <Link to="/brand" className="arrow">
-                {/* <img src="assets/image/home/arrow_light@2x.png" alt=""/> */}
+              <img src="/assets/image/home/01@2x.png" alt=""/>
+              <Link to="/product/0" className="arrow">
+                {/* <img src="/assets/image/home/arrow_light@2x.png" alt=""/> */}
               </Link>
             
           </div>
           <div className="col-6 text-center content-box">
-            <img src="assets/image/home/02@2x.png" alt=""/>
-            <Link to="/brand" className="arrow arrow_2">
-              {/* <img src="assets/image/home/arrow_light@2x.png" alt=""/> */}
+            <img src="/assets/image/home/02@2x.png" alt=""/>
+            <Link to="/product/1" className="arrow arrow_2">
+              {/* <img src="/assets/image/home/arrow_light@2x.png" alt=""/> */}
             </Link>
             {/* <div className="content-box">
               <div className="circle"></div>
@@ -61,14 +62,14 @@ function Home() {
     <div className="conservation">
       <div className="container">
         <div className="row">
-          <div className="col-6">
-            <img className="conservation_img" src="assets/image/home/conservation_center@2x.png" alt=""/>
+          <div className="col-7 col-md-6">
+            <img className="conservation_img" src="/assets/image/home/conservation_center@2x.png" alt=""/>
           </div>
-          <div className="col-6">
+          <div className="col-5 col-md-6">
             <BigTitle className="mb-60" cn="我们的品牌形象店" en="Introduction to our brand image store" />
             <MoreButton to="/brand" />
             <div className="flower text-right">
-              <img src="assets/image/home/flower@2x.png" alt=""/>
+              <img src="/assets/image/home/flower@2x.png" alt=""/>
             </div>
           </div>
         </div>
@@ -77,19 +78,19 @@ function Home() {
     </div>
 
     <div className="container video">
-      <BigTitle className="mb-92" cn="发现雾美" en="Eye nourishing energy package" />
+      <BigTitle className="mb-92 text-center text-md-left" cn="发现雾美" en="Eye nourishing energy package" />
       <div className="row">
         <div className="col-12 col-md-6">
           <Player
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="assets/image/home/poster_1@2x.png"
-            src="assets/video/video_1.mp4"
+            poster="/assets/image/home/poster_1@2x.png"
+            src="/assets/video/video_1.mp4"
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center desc">招商会花絮</div>
+          <div className="text-center small-font-size desc">招商会花絮</div>
         </div>
 
         <div className="col-12 col-md-6">
@@ -97,12 +98,12 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="assets/image/home/poster_2@2x.png"
-            src="assets/video/video_2.mp4"
+            poster="/assets/image/home/poster_2@2x.png"
+            src="/assets/video/video_2.mp4"
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center desc">众人一起见证产品效果</div>
+          <div className="text-center small-font-size desc">众人一起见证产品效果</div>
         </div>
 
         <div className="col-12 col-md-6">
@@ -110,12 +111,12 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="assets/image/home/poster_3@2x.png"
-            src="assets/video/video_3.mp4"
+            poster="/assets/image/home/poster_3@2x.png"
+            src="/assets/video/video_3.mp4"
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center desc">视力防控公益活动走进校园</div>
+          <div className="text-center small-font-size desc">视力防控公益活动走进校园</div>
         </div>
 
         <div className="col-12 col-md-6">
@@ -123,12 +124,12 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="assets/image/home/poster_4@2x.png"
-            src="assets/video/video_4.mp4"
+            poster="/assets/image/home/poster_4@2x.png"
+            src="/assets/video/video_4.mp4"
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center desc">视力防控公益活动走进校园</div>
+          <div className="text-center small-font-size desc">视力防控公益活动走进校园</div>
         </div>
       </div>
     </div>
@@ -144,17 +145,17 @@ function Home() {
 
       <div className="row">
         <div className="col-12 col-md-6 clear-padding">
-          <img className="about-us-img" src="assets/image/home/about_us@2x.png" alt=""/>
+          <img className="about-us-img" src="/assets/image/home/about_us@2x.png" alt=""/>
         </div>
         <div className="col-12 col-md-5 offset-md-1 about-us-right">
           <div className="about-us-right-box">
-            <img src="assets/image/home/position_img@2x.png" alt=""/>
+            <img src="/assets/image/home/position_img@2x.png" alt=""/>
             <div className="about-title">
               <span className="h2 bigger-font-size">关于我们</span>
               <hr className="hr" />
             </div>
             <p className="medium-font-size dark-color">杭州创胜生物科技有限公司，成立于2014年，总部设在美丽的杭州。雾美优视将改善青少年儿童视力健康为己任，以保护提升青少年视力为爆点，全家人的视力美护为核心。</p>
-            <MoreButton to="/brand" />
+            <MoreButton to="/about" />
           </div>
         </div>
       </div>

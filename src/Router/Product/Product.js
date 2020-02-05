@@ -1,15 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Slider } from '../../Components/Slider'
 import { BigTitle } from '../../Components/Title';
+import { useParams } from "react-router-dom";
+
 import './Product.scss'
 
-function Product() {
+function Product(props) {
   const [ checkedIndex, setCheckedIndex] = useState(0)
   const sliderImages = [
     {image: 'product/banner@2x.png', to: '/brand'},
     {image: 'product/banner@2x.png', to: '/brand'},
     {image: 'product/banner@2x.png', to: '/brand'}
   ];
+  let { name = '0' } = useParams();
+  useEffect(() => {
+    const tabIndex = ['0', '1']
+    const index = Number(tabIndex.includes(name) ? name: '0');
+    setCheckedIndex(index)
+  }, [name]);
 
   function tabContent() {
     return checkedIndex ?
@@ -18,18 +26,18 @@ function Product() {
           <BigTitle className="text-center mb-80" cn="养眼护眼黑科技" en="Black Technology" />
           <div className="content row">
             <div className="col-12 col-md-6">
-            < img src="assets/image/product/technology_img@2x.png" alt=""/>
+            < img src="/assets/image/product/technology_img@2x.png" alt=""/>
             </div>
             <div className="col-12 col-md-6 text-md-left text-center">
               <div className="technology_desc">
                 <div className="larger-font-size darker-color title">为护眼而生</div>
-                <p className="body-font-size light-color">护眼也需要像刷牙一样天天坚持，眼睛累了，请用雾美优视！</p>
+                <p className="body-font-size light-color">护眼也需要像刷牙一样天天坚持，<br/>眼睛累了，请用雾美优视！</p>
               </div>
             </div>
           </div>
         </div>
         <div className="principl">
-          <BigTitle className="text-center mb-80" cn="产品原理" en="Product principl" />
+          <BigTitle className="text-center mb-80" cn="养眼护眼三部曲" en="Eye nourishing Trilogy" />
           <div className="row">
             <div className="col-4">
               <div className="large-font-size font-bold darker-color mb-10">01</div>
@@ -55,19 +63,19 @@ function Product() {
           <BigTitle className="text-center mb-80" cn="别让近视挡住孩子的未来" en="Building a child's future" />
           <div className="row">
             <div className="col-3">
-              <img className="mb-26" src="assets/image/product/future_1@2x.png" alt=""/>
-              <img src="assets/image/product/future_4@2x.png" alt=""/>
+              <img className="mb-26" src="/assets/image/product/future_1@2x.png" alt=""/>
+              <img src="/assets/image/product/future_4@2x.png" alt=""/>
             </div>
             <div className="col-3">
-              <img className="mb-26" src="assets/image/product/future_2@2x.png" alt=""/>
-              <img src="assets/image/product/future_5@2x.png" alt=""/>
+              <img className="mb-26" src="/assets/image/product/future_2@2x.png" alt=""/>
+              <img src="/assets/image/product/future_5@2x.png" alt=""/>
             </div>
             <div className="col-3">
-              <img className="mb-26" src="assets/image/product/future_3@2x.png" alt=""/>
-              <img src="assets/image/product/future_6@2x.png" alt=""/>
+              <img className="mb-26" src="/assets/image/product/future_3@2x.png" alt=""/>
+              <img src="/assets/image/product/future_6@2x.png" alt=""/>
             </div>
             <div className="col-3">
-              <img src="assets/image/product/future_7@2x.png" alt=""/>
+              <img src="/assets/image/product/future_7@2x.png" alt=""/>
             </div>
           </div>
         </div>
@@ -82,16 +90,12 @@ function Product() {
             <div className="col-4">
               <div className="large-font-size font-bold darker-color mb-10">02</div>
               <div className="small-font-size dark-color mb-40">天然植物无添加</div>
-              <div className="min-font-size light-color text-justify">通过天然植物提取的无添加、零刺激、
-                安全可达口服级别的纳米化小分子，
-                直达筋膜层，修复受损视神经细胞，
-                清除自由基，补充细胞营养</div>
+              <div className="min-font-size light-color text-justify">通过天然植物提取的无添加、零刺激、安全可达口服级别的纳米化小分子，直达筋膜层，修复受损视神经细胞，清除自由基，补充细胞营养</div>
             </div>
             <div className="col-4">
               <div className="large-font-size font-bold darker-color mb-10">03</div>
               <div className="small-font-size dark-color mb-40">重塑眼睛自我调节</div>
-              <div className="min-font-size light-color text-justify">结合砭石疗法，打通经络，增加气血，
-                输送营养，重塑眼睛的自我调节功能。</div>
+              <div className="min-font-size light-color text-justify">结合砭石疗法，打通经络，增加气血，输送营养，重塑眼睛的自我调节功能。</div>
             </div>
           </div>
         </div>
@@ -101,25 +105,25 @@ function Product() {
           <div className="row">
             <div className="col-6">
               <div className="formulation_item">
-                <img className="formulation_img" src="assets/image/product/formulation_1@2x.png" alt=""/>
+                <img className="formulation_img" src="/assets/image/product/formulation_3@2x.png" alt=""/>
                 <div className="small-font-size light-color formulation_desc d-flex align-items-center text-justify"><span>北美金缕梅提取物：促进淋巴血液循环，镇静，安抚，调节皮脂分泌。</span></div>
               </div>
             </div>
             <div className="col-6">
               <div className="formulation_item">
-                <img className="formulation_img" src="assets/image/product/formulation_2@2x.png" alt=""/>
+                <img className="formulation_img" src="/assets/image/product/formulation_4@2x.png" alt=""/>
                 <div className="small-font-size light-color formulation_desc d-flex align-items-center text-justify"><span>黄瓜提取物：促进新陈代谢，抗氧化，舒缓眼部肌肉，缓解视疲劳。</span></div>
               </div>
             </div>
             <div className="col-6">
               <div className="formulation_item">
-                <img className="formulation_img" src="assets/image/product/formulation_3@2x.png" alt=""/>
+                <img className="formulation_img" src="/assets/image/product/formulation_1@2x.png" alt=""/>
                 <div className="small-font-size light-color formulation_desc d-flex align-items-center text-justify"><span>水解小麦蛋白：保湿，抗氧化，柔软细化皮肤，打通细胞间的通道。</span></div>
               </div>
             </div>
             <div className="col-6">
               <div className="formulation_item">
-                <img className="formulation_img" src="assets/image/product/formulation_4@2x.png" alt=""/>
+                <img className="formulation_img" src="/assets/image/product/formulation_2@2x.png" alt=""/>
                 <div className="small-font-size light-color formulation_desc d-flex align-items-center text-justify"><span>矢车菊提取物：明目，滋润皮肤。</span></div>
               </div>
             </div>
@@ -142,10 +146,10 @@ function Product() {
     </div>
     {
       checkedIndex === 1 && <div className="groups">
-        <BigTitle className="text-center mb-80" cn="5大适用人群" en="Five applicable groups" />
+        <BigTitle className="text-center mb-80" cn="五大适用人群" en="Five applicable groups" />
         <div className="content d-flex align-items-center justify-content-between">
-          <img className="groups_left" src="assets/image/product/product@2x.png" alt=""/>
-          <img className="groups_middle" src="assets/image/product/rectangle@2x.png" alt=""/>
+          <img className="groups_left" src="/assets/image/product/product@2x.png" alt=""/>
+          <img className="groups_middle" src="/assets/image/product/rectangle@2x.png" alt=""/>
           <div className="groups_right">
             <div className="large-font-size darker-color mb-30">白领族</div>
             <div className="body-font-size light-color mb-60">眼干、眼涩、眼疲劳。</div>
@@ -158,7 +162,7 @@ function Product() {
             <div className="large-font-size darker-color mb-30">手机族</div>
             <div className="body-font-size light-color padding-10">长时间看屏幕导致的眼镜不适。</div>
           </div>
-          <img className="tree" src="assets/image/product/tree@2x.png" alt=""/>
+          <img className="tree" src="/assets/image/product/tree@2x.png" alt=""/>
         </div>
       </div>
     }

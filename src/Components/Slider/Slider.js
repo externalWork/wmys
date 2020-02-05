@@ -17,7 +17,7 @@ export default function Slider (props) {
       {
         props.sliderImages.map((item, index) => {
           return <div className={'carousel-item' + (index ? '' : ' active')} key={index}>
-          <Link to={item.to}><img className="d-block w-100" src={'assets/image/' + item.image} alt="" /></Link>
+          <Link to={item.to}><img className="d-block w-100" src={'/assets/image/' + item.image} alt="" /></Link>
         </div>
         })
       }

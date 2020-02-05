@@ -11,8 +11,14 @@
 // }
 
 .navbar {
-  font-size: 14px;
-  padding: 28px 0;
+  // padding: 28px 0;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  padding: 0;
+  background-color: #fff;
   .active {
     color: #66BE00 !important;
     .line {
@@ -47,6 +53,7 @@
 
 .navbar-brand {
   margin-left: 0.75rem;
+  line-height: 128px;
 }
 
 .navbar-toggler-icon {
@@ -59,14 +66,15 @@
 }
 
 @media (max-width: 767px) {
-  // .navbar-logo {
-  //   width: 217px;
-  //   height: 56px;
-  // }
+  .navbar-logo {
+    width: 325.5px;
+    height: 84px;
+  }
 
-  // .navbar-brand {
-  //   padding: 20px 0;
-  // }
+  .navbar-brand {
+    padding: 0;
+    line-height: 250px;
+  }
 
   .navbar-toggler {
     border: none;
@@ -89,9 +97,14 @@
   .navbar-nav {
     background-color: #66BE00;
     height: calc(100vh - 96px);
+    
+  }
+  .nav-link {
+    padding: 0.9rem 1rem;
   }
 
   .nav-item {
     border-bottom: 1px solid #000;
+    padding-left: 0.75rem
   }
 }

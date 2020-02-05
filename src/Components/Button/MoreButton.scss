@@ -1,5 +1,4 @@
 .more-button {
-  // padding: 15px 30px;
   width: 168px;
   height: 48px;
   line-height: 48px;
@@ -12,20 +11,12 @@
   border:1px solid #333;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .more-button {
-    width: 362px;
-    height: 102px;
-    line-height: 102px;
-    border-radius: 51px;
-  }
-}
-
-@media (max-width: 360px) {
-  .more-button {
-    width: 420px;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 60px;
+    width: 460px;
+    height: 160px;
+    font-size: 70px;
+    line-height: 160px;
+    border-radius: 80px;
   }
 }

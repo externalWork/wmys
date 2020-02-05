@@ -140,7 +140,7 @@
     .desc {
       position: absolute;
       top: -55px;
-      font-size: 12px;
+      font-size: 20px;
     }
     .point_1, .desc_1 {
       left: 425px;
@@ -189,6 +189,9 @@
 
 @media (max-width: 767px) {
   .video {
+    .desc {
+      padding: 45px 0;
+    }
     .video-react {
       .video-react-big-play-button {
         width: 200px;
@@ -213,7 +216,8 @@
         top: -17.5px;
       }
       .desc {
-        top: -120px;
+        top: -150px;
+        font-size: 65px;
       }
 
       .point_1, .desc_1 {

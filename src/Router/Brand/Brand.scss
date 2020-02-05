@@ -1,11 +1,11 @@
 .brand {
   min-height: calc(100vh - 900px);
   .title {
-    margin: 100px 0;
+    margin: 100px 0 50px 0;
   }
   .content {
     position: relative;
-    padding: 200px 0 300px 0;
+    padding: 200px 0 200px 0;
     img {
       width: 660px;
       content: normal !important;
@@ -34,12 +34,32 @@
       left: 1330px;
     }
   }
+  .contact {
+    margin-bottom: 148px;
+    .contact-content {
+      width: 768px;
+      font-size: 32px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
   .brand {
     .large-font-size {
-      font-size: 40px;
+      font-size: 75px;
+    }
+    .title {
+      margin: 250px 0 125px 0;
+    }
+    .content {
+      margin: 200px 0 500px 0;
+    }
+    .contact {
+      margin-bottom: 350px;
+      .contact-content {
+        font-size: 70px;
+        width: 90%;
+      }
     }
   }
 }

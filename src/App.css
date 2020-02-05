@@ -29,6 +29,15 @@ ul, li {
   list-style: none;
 }
 
+.carousel-indicators {
+  margin-bottom: 24px;
+}
+
+.carousel-indicators li {
+  width: 60px;
+  height: 6px;
+}
+
 button, button:focus {
   outline: 0 none;
 }
@@ -97,6 +106,9 @@ button, button:focus {
 
 
 @media (max-width: 767px) {
+  body {
+    padding-top: 250px;
+  }
   .min-font-size {
     font-size: 50px;
   }
@@ -128,9 +140,8 @@ button, button:focus {
   .max-font-size {
     font-size: 200px;
   }
-  
+  .carousel-indicators li {
+    width: 75px;
+    height: 10px;
+  }
 }
-
-/* @media (max-width: 575px) {
-  
-} */

@@ -34,10 +34,10 @@ function About() {
         <BigTitle className="title text-center" cn="证书资质" en="Certificate qualification" />
         <div className="row">
           <div className="col-6">
-            <img src="assets/image/about/counterfeit@2x.png" alt=""/>
+            <img src="/assets/image/about/counterfeit@2x.png" alt=""/>
           </div>
           <div className="col-6">
-            <img src="assets/image/about/Insurance@2x.png" alt=""/>
+            <img src="/assets/image/about/Insurance@2x.png" alt=""/>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ function About() {
             <Marker>
               <Point lng="120.259204" lat="30.242381" />
               {/* <Icon
-                imageUrl="/assets/image/about/point@2x.png"
+                imageUrl="//assets/image/about/point@2x.png"
               >
                 <Size width="30" height="30" />
               </Icon> */}

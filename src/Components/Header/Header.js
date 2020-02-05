@@ -16,20 +16,20 @@ export default function Header(props) {
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="assets/image/logo@2x.png" className="navbar-logo" alt="" />
+          <img src="/assets/image/logo@2x.png" className="navbar-logo" alt="" />
         </Link>
         <button onClick={() => setShow(!show)} className={'navbar-toggler' + (show ? ' navbar-close' : '')} type="button"  data-toggle="collapse" data-target="#collapsingNavbar">
           {
-            show ? <img className="cross" src="assets/image/cross@2x.png" alt="" /> : <span className="navbar-toggler-icon"></span>
+            show ? <img className="cross" src="/assets/image/cross@2x.png" alt="" /> : <span className="navbar-toggler-icon"></span>
           }
         </button>
         <div className="navbar-collapse collapse" id="collapsingNavbar">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink className="nav-link small-font-size" activeClassName="active" to="/home" onClick={() => navigate()}>首页<div className="line" /></NavLink>
+              <NavLink className="nav-link small-font-size" activeClassName="active" exact to="/" onClick={() => navigate()}>首页<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link small-font-size" activeClassName="active" to="/product" onClick={() => navigate()}>产品中心<div className="line" /></NavLink>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/product/1" onClick={() => navigate()}>产品中心<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link small-font-size" activeClassName="active" to="/welfare" onClick={() => navigate()}>公益活动<div className="line" /></NavLink>
