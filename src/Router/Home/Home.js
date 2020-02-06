@@ -32,17 +32,19 @@ function Home() {
                 <a href="" className="arrow">→</a>
               </div>
             </div> */}
-
+            <Link to="/product/0">
               <img src="/assets/image/home/01@2x.png" alt=""/>
-              <Link to="/product/0" className="arrow">
+              <span className="arrow">
                 {/* <img src="/assets/image/home/arrow_light@2x.png" alt=""/> */}
-              </Link>
-            
+              </span>
+            </Link>
           </div>
           <div className="col-6 text-center content-box">
-            <img src="/assets/image/home/02@2x.png" alt=""/>
-            <Link to="/product/1" className="arrow arrow_2">
-              {/* <img src="/assets/image/home/arrow_light@2x.png" alt=""/> */}
+            <Link to="/product/1">
+              <img src="/assets/image/home/02@2x.png" alt=""/>
+              <span className="arrow arrow_2">
+                {/* <img src="/assets/image/home/arrow_light@2x.png" alt=""/> */}
+              </span>
             </Link>
             {/* <div className="content-box">
               <div className="circle"></div>
@@ -119,7 +121,7 @@ function Home() {
           <div className="text-center small-font-size desc">视力防控公益活动走进校园</div>
         </div>
 
-        <div className="col-12 col-md-6 mobile-hide">
+        <div className="col-12 col-md-6">
           <Player
             playsInline
             aspectRatio="16:9"

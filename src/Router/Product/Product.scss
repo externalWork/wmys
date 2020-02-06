@@ -17,6 +17,9 @@
 
   .future {
     padding-bottom: 150px;
+    .imgae-box {
+      width: calc(25% -22.5px);
+    }
     img {
       width: 100%;
     }

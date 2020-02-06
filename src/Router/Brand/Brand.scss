@@ -53,6 +53,10 @@
     }
     .content {
       margin: 200px 0 500px 0;
+      img {
+        width: 900px;
+        content: normal !important;
+      }
     }
     .contact {
       margin-bottom: 350px;
@@ -70,14 +74,21 @@
       .desc {
         width: 360px;
       }
+      .desc_1 {
+        top: 160px;
+        left: 160px;
+      }
       .desc_2 {
-        right: 220px;
+        top: 160px;
+        left: 1450px;
       }
       .desc_3 {
-        left: 250px;
+        top: 700px;
+        left: 160px;
       }
       .desc_4 {
-        right: 220px;
+        top: 700px;
+        left: 1450px;
       }
     }
   }

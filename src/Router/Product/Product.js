@@ -61,20 +61,20 @@ function Product(props) {
       <div className="tab-content">
         <div className="future">
           <BigTitle className="text-center mb-80" cn="别让近视挡住孩子的未来" en="Building a child's future" />
-          <div className="row">
-            <div className="col-3">
+          <div className="d-flex justify-content-between">
+            <div className="imgae-box">
               <img className="mb-26" src="/assets/image/product/future_1@2x.png" alt=""/>
               <img src="/assets/image/product/future_4@2x.png" alt=""/>
             </div>
-            <div className="col-3">
+            <div className="imgae-box">
               <img className="mb-26" src="/assets/image/product/future_2@2x.png" alt=""/>
               <img src="/assets/image/product/future_5@2x.png" alt=""/>
             </div>
-            <div className="col-3">
+            <div className="imgae-box">
               <img className="mb-26" src="/assets/image/product/future_3@2x.png" alt=""/>
               <img src="/assets/image/product/future_6@2x.png" alt=""/>
             </div>
-            <div className="col-3">
+            <div className="imgae-box">
               <img src="/assets/image/product/future_7@2x.png" alt=""/>
             </div>
           </div>
