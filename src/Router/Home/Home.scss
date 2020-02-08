@@ -102,6 +102,10 @@
       background: url(/assets/image/home/play@2x.png) no-repeat center;
       background-size: 80px;
     }
+    .video-react-big-play-button:hover {
+      background: url(/assets/image/home/play_hover@2x.png) no-repeat center;
+      background-size: 80px;
+    }
     .video-react-big-play-button.video-react-big-play-button-center {
       left: calc(50% - 40px);
       top: calc(50% - 40px);
@@ -199,6 +203,9 @@
       .video-react-big-play-button {
         width: 200px;
         height: 200px;
+        background-size: 200px;
+      }
+      .video-react-big-play-button:hover {
         background-size: 200px;
       }
       .video-react-big-play-button.video-react-big-play-button-center {

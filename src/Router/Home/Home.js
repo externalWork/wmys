@@ -9,10 +9,10 @@ import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
   const sliderImages = [
-    {image: 'home/banner.png', to: '/product/1'},
-    {image: 'home/banner.png', to: '/brand'},
-    {image: 'home/banner.png', to: '/brand'},
-    {image: 'home/banner.png', to: '/brand'}
+    {image: 'home/banner_1.png', to: '/product/1'},
+    {image: 'home/banner_2.png', to: '/product/0'},
+    {image: 'home/banner_3.png', to: '/brand'},
+    {image: 'home/banner_4.png', to: '/about'}
   ];
   return <div className="home">
     <Slider sliderImages={sliderImages}/>
@@ -80,7 +80,7 @@ function Home() {
     </div>
 
     <div className="container video">
-      <BigTitle className="mb-92 text-center text-md-left" cn="发现雾美" en="Eye nourishing energy package" />
+      <BigTitle className="mb-92 text-center text-md-left" cn="发现雾美" en="Discover wumei" />
       <div className="row">
         <div className="col-12 col-md-6">
           <Player
@@ -156,7 +156,7 @@ function Home() {
               <span className="h2 bigger-font-size">关于我们</span>
               <hr className="hr" />
             </div>
-            <p className="medium-font-size dark-color">杭州创胜生物科技有限公司，成立于2014年，总部设在美丽的杭州。雾美优视将改善青少年儿童视力健康为己任，以保护提升青少年视力为爆点，全家人的视力美护为核心。</p>
+            <p className="medium-font-size dark-color text-justify">杭州创胜生物科技有限公司，成立于2014年，总部设在美丽的杭州。雾美优视将改善青少年儿童视力健康为己任，以保护提升青少年视力为爆点，全家人的视力美护为核心。</p>
             <MoreButton to="/about" />
           </div>
         </div>

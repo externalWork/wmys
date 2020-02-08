@@ -4,9 +4,10 @@ import { BigTitle } from '../../Components/Title';
 import './Brand.scss'
 function Brand() {
   const sliderImages = [
-    {image: 'brand/banner@2x.png', to: '/brand'},
-    {image: 'brand/banner@2x.png', to: '/brand'},
-    {image: 'brand/banner@2x.png', to: '/brand'}
+    {image: 'brand/banner_1.png', to: null},
+    {image: 'brand/banner_2.png', to: null},
+    {image: 'brand/banner_3.png', to: null},
+    {image: 'brand/banner_4.png', to: null}
   ];
   return <div className="brand">
     <Slider sliderImages={sliderImages} />
