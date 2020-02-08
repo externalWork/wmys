@@ -29,7 +29,7 @@ export default function Header(props) {
               <NavLink className="nav-link small-font-size" activeClassName="active" exact to="/" onClick={() => navigate()}>首页<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link small-font-size" activeClassName="active" to="/product/1" onClick={() => navigate()}>产品中心<div className="line" /></NavLink>
+              <NavLink className="nav-link small-font-size" activeClassName="active" to="/product/0" onClick={() => navigate()}>产品中心<div className="line" /></NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link small-font-size" activeClassName="active" to="/welfare" onClick={() => navigate()}>公益活动<div className="line" /></NavLink>

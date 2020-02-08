@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom"
-
+import $ from 'jquery'
 import './Slider.scss'
 
 export default function Slider (props) {
+
+  useEffect(() => {
+    $('#carousel').carousel()
+  },[])
   return <div id="carousel" className="carousel slide" data-ride="carousel">
     <ol className="carousel-indicators">
       {

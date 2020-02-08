@@ -156,7 +156,7 @@ function Home() {
               <span className="h2 bigger-font-size">关于我们</span>
               <hr className="hr" />
             </div>
-            <p className="medium-font-size dark-color text-justify">杭州创胜生物科技有限公司，成立于2014年，总部设在美丽的杭州。雾美优视将改善青少年儿童视力健康为己任，以保护提升青少年视力为爆点，全家人的视力美护为核心。</p>
+            <p className="medium-font-size dark-color text-justify">杭州创胜生物科技有限公司，成立于2014年，总部设在美丽的杭州。雾美优视将养护青少年儿童视力健康为己任，以预防青少年近视为爆点，全家人的视力美护为核心。</p>
             <MoreButton to="/about" />
           </div>
         </div>
