@@ -113,7 +113,7 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            // poster="/assets/image/home/poster_3@2x.png"
+            poster="/assets/image/home/poster_3@2x.png"
             src="/assets/video/video_3.mp4"
           >
             <BigPlayButton position="center" />
@@ -126,12 +126,12 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            // poster="/assets/image/home/poster_4@2x.png"
+            poster="/assets/image/home/poster_4@2x.png"
             src="/assets/video/video_4.mp4"
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center small-font-size desc">2020年公司喜报</div>
+          <div className="text-center small-font-size desc">视力防控公益活动走进校园</div>
         </div>
       </div>
     </div>
