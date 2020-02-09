@@ -14,10 +14,10 @@ const { Content } = Label;
 // const { Icon } = Marker;
 function About() {
   const sliderImages = [
-    {image: 'about/banner_1.png', to: null},
-    {image: 'about/banner_2.png', to: null},
-    {image: 'about/banner_3.png', to: null},
-    {image: 'about/banner_4.png', to: null}
+    {image: 'about/banner_1.jpg', to: null},
+    {image: 'about/banner_2.jpg', to: null},
+    {image: 'about/banner_3.jpg', to: null},
+    {image: 'about/banner_4.jpg', to: null}
   ];
   return <div className="about">
     <Slider sliderImages={sliderImages} />

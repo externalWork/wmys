@@ -9,10 +9,10 @@ import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
   const sliderImages = [
-    {image: 'home/banner_1.png', to: '/product/1'},
-    {image: 'home/banner_2.png', to: '/product/0'},
-    {image: 'home/banner_3.png', to: '/brand'},
-    {image: 'home/banner_4.png', to: '/about'}
+    {image: 'home/banner_1.jpg', to: '/product/1'},
+    {image: 'home/banner_2.jpg', to: '/product/0'},
+    {image: 'home/banner_3.jpg', to: '/brand'},
+    {image: 'home/banner_4.jpg', to: '/about'}
   ];
   return <div className="home">
     <Slider sliderImages={sliderImages}/>

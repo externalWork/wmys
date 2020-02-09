@@ -8,10 +8,10 @@ import './Product.scss'
 function Product(props) {
   const [ checkedIndex, setCheckedIndex] = useState(0)
   const sliderImages = [
-    {image: 'product/banner_1.png', to: null},
-    {image: 'product/banner_2.png', to: null},
-    {image: 'product/banner_3.png', to: null},
-    {image: 'product/banner_4.png', to: null}
+    {image: 'product/banner_1.jpg', to: null},
+    {image: 'product/banner_2.jpg', to: null},
+    {image: 'product/banner_3.jpg', to: null},
+    {image: 'product/banner_4.jpg', to: null}
   ];
   let { name = '0' } = useParams();
   useEffect(() => {
