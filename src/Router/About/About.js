@@ -14,10 +14,10 @@ const { Content } = Label;
 // const { Icon } = Marker;
 function About() {
   const sliderImages = [
-    {image: 'about/banner_1.jpg', to: null},
-    {image: 'about/banner_2.jpg', to: null},
-    {image: 'about/banner_3.jpg', to: null},
-    {image: 'about/banner_4.jpg', to: null}
+    {image: 'about/banner_1.jpeg', to: null},
+    {image: 'about/banner_2.jpeg', to: null},
+    {image: 'about/banner_3.jpeg', to: null},
+    {image: 'about/banner_4.jpeg', to: null}
   ];
   return <div className="about">
     <Slider sliderImages={sliderImages} />
@@ -35,10 +35,10 @@ function About() {
         <BigTitle className="title text-center" cn="证书资质" en="Certificate qualification" />
         <div className="row">
           <div className="col-6">
-            <img src="/assets/image/about/counterfeit@2x.png" alt=""/>
+            <img src="/assets/image/about/counterfeit.jpeg" alt=""/>
           </div>
           <div className="col-6">
-            <img src="/assets/image/about/Insurance@2x.png" alt=""/>
+            <img src="/assets/image/about/Insurance.jpeg" alt=""/>
           </div>
         </div>
       </div>

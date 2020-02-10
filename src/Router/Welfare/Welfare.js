@@ -5,10 +5,10 @@ import './Welfare.scss'
 
 function Welfare() {
   const sliderImages = [
-    {image: 'welfare/banner_1.jpg', to: null},
-    {image: 'welfare/banner_2.jpg', to: null},
-    {image: 'welfare/banner_3.jpg', to: null},
-    {image: 'welfare/banner_4.jpg', to: null}
+    {image: 'welfare/banner_1.jpeg', to: null},
+    {image: 'welfare/banner_2.jpeg', to: null},
+    {image: 'welfare/banner_3.jpeg', to: null},
+    {image: 'welfare/banner_4.jpeg', to: null}
   ];
   
   return <div className="welfare">

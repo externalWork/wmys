@@ -9,10 +9,10 @@ import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
   const sliderImages = [
-    {image: 'home/banner_1.jpg', to: '/product/1'},
-    {image: 'home/banner_2.jpg', to: '/product/0'},
-    {image: 'home/banner_3.jpg', to: '/brand'},
-    {image: 'home/banner_4.jpg', to: '/about'}
+    {image: 'home/banner_1.jpeg', to: '/product/1'},
+    {image: 'home/banner_2.jpeg', to: '/product/0'},
+    {image: 'home/banner_3.jpeg', to: '/brand'},
+    {image: 'home/banner_4.jpeg', to: '/about'}
   ];
   return <div className="home">
     <Slider sliderImages={sliderImages}/>
@@ -87,7 +87,7 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="/assets/image/home/poster_1@2x.png"
+            poster="/assets/image/home/poster_1.jpeg"
             src="/assets/video/video_1.mp4"
           >
             <BigPlayButton position="center" />
@@ -100,7 +100,7 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="/assets/image/home/poster_2@2x.png"
+            poster="/assets/image/home/poster_2.jpeg"
             src="/assets/video/video_2.mp4"
           >
             <BigPlayButton position="center" />
@@ -113,7 +113,7 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="/assets/image/home/poster_3@2x.png"
+            poster="/assets/image/home/poster_3.jpeg"
             src="/assets/video/video_3.mp4"
           >
             <BigPlayButton position="center" />
@@ -126,7 +126,7 @@ function Home() {
             playsInline
             aspectRatio="16:9"
             // startTime={300}
-            poster="/assets/image/home/poster_4@2x.png"
+            poster="/assets/image/home/poster_4.jpeg"
             src="/assets/video/video_4.mp4"
           >
             <BigPlayButton position="center" />
@@ -151,7 +151,7 @@ function Home() {
         </div>
         <div className="col-12 col-md-5 offset-md-1 about-us-right">
           <div className="about-us-right-box">
-            <img src="/assets/image/home/position_img@2x.png" alt=""/>
+            <img src="/assets/image/home/position_img.jpeg" alt=""/>
             <div className="about-title">
               <span className="h2 bigger-font-size">关于我们</span>
               <hr className="hr" />

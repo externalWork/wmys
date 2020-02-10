@@ -8,10 +8,10 @@ import './Product.scss'
 function Product(props) {
   const [ checkedIndex, setCheckedIndex] = useState(0)
   const sliderImages = [
-    {image: 'product/banner_1.jpg', to: null},
-    {image: 'product/banner_2.jpg', to: null},
-    {image: 'product/banner_3.jpg', to: null},
-    {image: 'product/banner_4.jpg', to: null}
+    {image: 'product/banner_1.jpeg', to: null},
+    {image: 'product/banner_2.jpeg', to: null},
+    {image: 'product/banner_3.jpeg', to: null},
+    {image: 'product/banner_4.jpeg', to: null}
   ];
   let { name = '0' } = useParams();
   useEffect(() => {
@@ -27,7 +27,7 @@ function Product(props) {
           <BigTitle className="text-center mb-80" cn="养眼护眼黑科技" en="Black Technology" />
           <div className="content row">
             <div className="col-12 col-md-6">
-            < img src="/assets/image/product/technology_img@2x.png" alt=""/>
+            < img src="/assets/image/product/technology_img.jpeg" alt=""/>
             </div>
             <div className="col-12 col-md-6 text-md-left text-center">
               <div className="technology_desc">
