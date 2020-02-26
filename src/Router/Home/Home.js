@@ -105,7 +105,7 @@ function Home() {
           >
             <BigPlayButton position="center" />
           </Player>
-          <div className="text-center small-font-size desc">众人一起见证产品效果</div>
+          <div className="text-center small-font-size desc">新品发布会</div>
         </div>
 
         <div className="col-12 col-md-6">
