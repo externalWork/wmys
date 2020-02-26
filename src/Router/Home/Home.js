@@ -9,7 +9,7 @@ import "../../../node_modules/video-react/dist/video-react.css";
 import './Home.scss';
 function Home() {
   const sliderImages = [
-    {image: 'home/banner_1.jpeg', to: '/product/1'},
+    {image: 'home/banner_1.jpg', to: '/product/1'},
     {image: 'home/banner_2.jpeg', to: '/product/0'},
     {image: 'home/banner_3.jpeg', to: '/brand'},
     {image: 'home/banner_4.jpeg', to: '/about'}

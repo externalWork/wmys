@@ -11,7 +11,7 @@ function Product(props) {
     {image: 'product/banner_1.jpeg', to: null},
     {image: 'product/banner_2.jpeg', to: null},
     {image: 'product/banner_3.jpeg', to: null},
-    {image: 'product/banner_4.jpeg', to: null}
+    {image: 'product/banner_4.jpg', to: null}
   ];
   let { name = '0' } = useParams();
   useEffect(() => {
